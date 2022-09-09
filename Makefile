@@ -32,7 +32,10 @@ swiftformat: _CONFIG_ = $($(patsubst %,CONFIG_%,$@))
 swiftformat: _FILES_  = SWIFT_RESPONSE_FILE_PATH_${CURRENT_VARIANT}_${ARCHS}
 swiftformat: update_swiftformat build_swiftformat
 	
-	@$(_EXEC_) --config $(_CONFIG_) --filelist ${$(_FILES_)}
+	@echo "Swift format executable:    $(_EXEC_)"
+	@echo "Swift format configuration: $(_CONFIG_)"
+	@echo "Swift format file list:     $(_FILES_) - ${$(_FILES_)}"
+	@$(_EXEC_) --config "$(_CONFIG_)" --filelist "${$(_FILES_)}"
 	
 .SECONDEXPANSION:
 
