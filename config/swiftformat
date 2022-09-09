@@ -1,0 +1,219 @@
+--swiftversion      5
+
+--rules             acronyms
+--acronyms          ID,UID,UUID,UDID,NSUUID,URL,NSURL,PDF
+
+--rules             andOperator
+
+--rules             anyObjectProtocol
+
+--rules             assertionFailures
+
+--rules             blankLinesAroundMark
+--lineaftermarks    true
+
+--rules             blankLinesAtEndOfScope
+
+--rules             blankLinesAtStartOfScope
+--typeblanklines    remove
+
+--rules             blankLinesBetweenImports
+
+--rules             blankLinesBetweenScopes
+
+--disable           blockComments
+
+--rules             braces
+--allman            true
+
+--rules             consecutiveBlankLines
+
+--disable           consecutiveSpaces
+
+--rules             duplicateImports
+
+--rules             elseOnSameLine
+--elseposition      next-line
+--guardelse         next-line
+
+--rules             emptyBraces
+--emptybraces       no-space
+
+--disable           enumNamespaces
+
+--rules             extensionAccessControl
+--extensionacl      on-extension
+
+--rules             fileHeader
+--header            /*******************************************************************************\n * Copyright (c) 2022, DigiDNA\n * All rights reserved\n * \n * Unauthorised copying of this copyrighted work, via any medium is strictly\n * prohibited.\n * Proprietary and confidential.\n ******************************************************************************/
+
+--rules             hoistPatternLet
+--patternlet        inline
+
+--rules             indent
+--indent            4
+--tabwidth          4
+--smarttabs         enabled
+--indentcase        true
+--ifdef             indent
+--xcodeindentation  disabled
+--indentstrings     true
+
+--disable           initCoderUnavailable
+
+--rules             isEmpty
+
+--rules             leadingDelimiters
+
+--rules             linebreakAtEndOfFile
+
+--rules             linebreaks
+--linebreaks        lf
+
+--rules             markTypes
+--marktypes         never
+--markextensions    never
+
+--rules             modifierOrder
+--modifierorder     fileprivate,public,private,required,convenience,final,open,override,class,static,lazy,weak
+
+--rules             numberFormatting
+--decimalgrouping   ignore
+--binarygrouping    ignore
+--octalgrouping     ignore
+--hexgrouping       ignore
+--fractiongrouping  disabled
+--exponentgrouping  disabled
+--hexliteralcase    uppercase
+--exponentcase      lowercase
+
+--disable           organizeDeclarations
+
+--rules             preferDouble
+
+--rules             preferKeyPath
+
+--rules             redundantBackticks
+
+--rules             redundantBreak
+
+--rules             redundantClosure
+
+--rules             redundantExtensionACL
+
+--rules             redundantFileprivate
+
+--rules             redundantGet
+
+--rules             redundantInit
+
+--rules             redundantLet
+
+--rules             redundantLetError
+
+--rules             redundantNilInit
+
+--rules             redundantObjc
+
+--rules             redundantParens
+
+--rules             redundantPattern
+
+--rules             redundantRawValues
+
+--rules             redundantReturn
+
+--rules             redundantSelf
+--self              insert
+
+--rules             redundantType
+--redundanttype     inferred
+
+--rules             redundantVoidReturnType
+--closurevoid       remove
+
+--rules             semicolons
+--semicolons        never
+
+--disable           sortDeclarations
+
+--rules             sortedImports
+--importgrouping    alpha
+
+--disable           sortedSwitchCases
+
+--rules             spaceAroundBraces
+
+--rules             spaceAroundBrackets
+
+--rules             spaceAroundComments
+
+--rules             spaceAroundGenerics
+
+--rules             spaceAroundOperators
+--operatorfunc      spaced
+--nospaceoperators  
+--ranges            spaced
+
+--rules             spaceAroundParens
+
+--rules             spaceInsideBraces
+
+--disable           spaceInsideBrackets
+--rules             x_addSpaceInsideBrackets
+
+--rules             spaceInsideComments
+
+--disable           spaceInsideGenerics
+--rules             x_addSpaceInsideGenerics
+
+--disable           spaceInsideParens
+--rules             x_addSpaceInsideParens
+
+--rules             strongOutlets
+
+--rules             strongifiedSelf
+
+--rules             todos
+
+--rules             trailingClosures
+
+--rules             trailingCommas
+--commas            always
+
+--rules             trailingSpace
+--trimwhitespace    always
+
+--rules             typeSugar
+--shortoptionals    always
+
+--disable           unusedArguments
+
+--rules             void
+--voidtype          void
+
+--rules             wrap
+--maxwidth          none
+--nowrapoperators   
+--wrapternary       default
+
+--rules             wrapArguments
+--wrapparameters    before-first
+--wrapcollections   before-first"
+--closingparen      balanced
+
+--rules             wrapAttributes
+--funcattributes    same-line
+--typeattributes    same-line
+--varattributes     same-line
+
+--disable           wrapConditionalBodies
+
+--rules             wrapEnumCases
+
+--rules             wrapMultilineStatementBraces
+
+--rules             wrapSwitchCases
+
+--rules             yodaConditions
+--yodaswap          always
