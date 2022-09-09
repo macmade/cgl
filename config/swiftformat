@@ -1,7 +1,6 @@
 --swiftversion      5
 
---rules             acronyms
---acronyms          ID,UID,UUID,UDID,NSUUID,URL,NSURL,PDF
+--disable           acronyms
 
 --rules             andOperator
 
