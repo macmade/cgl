@@ -1,6 +1,19 @@
 --swiftversion      5
 
 --disable           acronyms
+--disable           blockComments
+--disable           consecutiveSpaces
+--disable           enumNamespaces
+--disable           initCoderUnavailable
+--disable           isEmpty
+--disable           organizeDeclarations
+--disable           sortDeclarations
+--disable           sortedSwitchCases
+--disable           spaceInsideBrackets
+--disable           spaceInsideGenerics
+--disable           spaceInsideParens
+--disable           unusedArguments
+--disable           wrapConditionalBodies
 
 --rules             andOperator
 
@@ -20,14 +33,10 @@
 
 --rules             blankLinesBetweenScopes
 
---disable           blockComments
-
 --rules             braces
 --allman            true
 
 --rules             consecutiveBlankLines
-
---disable           consecutiveSpaces
 
 --rules             duplicateImports
 
@@ -38,8 +47,6 @@
 --rules             emptyBraces
 --emptybraces       no-space
 
---disable           enumNamespaces
-
 --rules             extensionAccessControl
 --extensionacl      on-extension
 
@@ -49,7 +56,7 @@
 --rules             hoistPatternLet
 --patternlet        inline
 
---rules             indent
+--disable             indent
 --indent            4
 --tabwidth          4
 --smarttabs         enabled
@@ -57,10 +64,6 @@
 --ifdef             indent
 --xcodeindentation  disabled
 --indentstrings     true
-
---disable           initCoderUnavailable
-
---rules             isEmpty
 
 --rules             leadingDelimiters
 
@@ -85,8 +88,6 @@
 --exponentgrouping  disabled
 --hexliteralcase    uppercase
 --exponentcase      lowercase
-
---disable           organizeDeclarations
 
 --rules             preferDouble
 
@@ -122,7 +123,7 @@
 
 --rules             redundantReturn
 
---rules             redundantSelf
+--disable             redundantSelf
 --self              insert
 
 --rules             redundantType
@@ -134,12 +135,8 @@
 --rules             semicolons
 --semicolons        never
 
---disable           sortDeclarations
-
 --rules             sortedImports
 --importgrouping    alpha
-
---disable           sortedSwitchCases
 
 --rules             spaceAroundBraces
 
@@ -149,7 +146,7 @@
 
 --rules             spaceAroundGenerics
 
---rules             spaceAroundOperators
+--disable             spaceAroundOperators
 --operatorfunc      spaced
 --nospaceoperators  
 --ranges            spaced
@@ -158,15 +155,12 @@
 
 --rules             spaceInsideBraces
 
---disable           spaceInsideBrackets
 --rules             x_addSpaceInsideBrackets
 
 --rules             spaceInsideComments
 
---disable           spaceInsideGenerics
 --rules             x_addSpaceInsideGenerics
 
---disable           spaceInsideParens
 --rules             x_addSpaceInsideParens
 
 --rules             strongOutlets
@@ -186,8 +180,6 @@
 --rules             typeSugar
 --shortoptionals    always
 
---disable           unusedArguments
-
 --rules             void
 --voidtype          void
 
@@ -196,17 +188,15 @@
 --nowrapoperators   
 --wrapternary       default
 
---rules             wrapArguments
+--disable             wrapArguments
 --wrapparameters    before-first
 --wrapcollections   before-first"
 --closingparen      balanced
 
 --rules             wrapAttributes
---funcattributes    same-line
---typeattributes    same-line
+--funcattributes    prev-line
+--typeattributes    prev-line
 --varattributes     same-line
-
---disable           wrapConditionalBodies
 
 --rules             wrapEnumCases
 
