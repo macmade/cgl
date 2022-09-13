@@ -1,0 +1,171 @@
+# ------------------------------------------------------------------------------
+# General
+# ------------------------------------------------------------------------------
+
+IndentWidth:                4
+TabWidth:                   4
+ContinuationIndentWidth:    4
+ColumnLimit:                0
+UseCRLF:                    false
+UseTab:                     false
+DeriveLineEnding:           false
+DerivePointerAlignment:     false
+DisableFormat:              false
+ReflowComments:             false
+
+# ------------------------------------------------------------------------------
+# Alignment
+# ------------------------------------------------------------------------------
+
+AlignAfterOpenBracket:          AlwaysBreak
+AlignConsecutiveAssignments:    true
+AlignConsecutiveBitFields:      true
+AlignConsecutiveDeclarations:   true
+AlignConsecutiveMacros:         true
+AlignEscapedNewlines:           Left
+AlignOperands:                  AlignAfterOperator
+AlignTrailingComments:          true
+
+# ------------------------------------------------------------------------------
+# Single Line Behavior
+# ------------------------------------------------------------------------------
+
+AllowAllArgumentsOnNextLine:                false
+AllowAllConstructorInitializersOnNextLine:  false
+AllowAllParametersOfDeclarationOnNextLine:  false
+AllowShortBlocksOnASingleLine:              Never
+AllowShortCaseLabelsOnASingleLine:          true
+AllowShortEnumsOnASingleLine:               false
+AllowShortFunctionsOnASingleLine:           None
+AllowShortIfStatementsOnASingleLine:        Never
+AllowShortLambdasOnASingleLine:             Inline
+AllowShortLoopsOnASingleLine:               false
+
+# ------------------------------------------------------------------------------
+# Break
+# ------------------------------------------------------------------------------
+
+AlwaysBreakAfterDefinitionReturnType:   None
+AlwaysBreakAfterReturnType:             None
+AlwaysBreakBeforeMultilineStrings:      false
+AlwaysBreakTemplateDeclarations:        Yes
+BreakAfterJavaFieldAnnotations:         true
+BreakBeforeBinaryOperators:             NonAssignment
+BreakBeforeBraces:                      Custom
+BreakBeforeTernaryOperators:            true
+BreakConstructorInitializers:           AfterColon
+BreakInheritanceList:                   AfterColon
+BreakStringLiterals:                    true
+
+# ------------------------------------------------------------------------------
+# Braces
+# ------------------------------------------------------------------------------
+
+BraceWrapping:
+    
+    AfterCaseLabel:         true
+    AfterClass:             true
+    AfterControlStatement:  Always
+    AfterEnum:              true
+    AfterFunction:          true
+    AfterNamespace:         true
+    AfterObjCDeclaration:   true
+    AfterStruct:            true
+    AfterUnion:             true
+    AfterExternBlock:       true
+    BeforeCatch:            true
+    BeforeElse:             true
+    BeforeLambdaBody:       true
+    BeforeWhile:            true
+    IndentBraces:           false
+    SplitEmptyFunction:     false
+    SplitEmptyRecord:       false
+    SplitEmptyNamespace:    false
+
+# ------------------------------------------------------------------------------
+# Indentation
+# ------------------------------------------------------------------------------
+
+IndentCaseBlocks:           false
+IndentCaseLabels:           true
+IndentExternBlock:          Indent
+IndentGotoLabels:           true
+IndentPPDirectives:         None
+IndentWrappedFunctionNames: false
+NamespaceIndentation:       All
+
+# ------------------------------------------------------------------------------
+# Spacing
+# ------------------------------------------------------------------------------
+
+BitFieldColonSpacing:               After
+PointerAlignment:                   Middle
+SpaceAfterCStyleCast:               false
+SpaceAfterLogicalNot:               false
+SpaceAfterTemplateKeyword:          false
+SpaceBeforeAssignmentOperators:     true
+SpaceBeforeCpp11BracedList:         true
+SpaceBeforeCtorInitializerColon:    false
+SpaceBeforeInheritanceColon:        false
+SpaceBeforeParens:                  Never
+SpaceBeforeRangeBasedForLoopColon:  false
+SpaceBeforeSquareBrackets:          false
+SpacesBeforeTrailingComments:       1
+SpaceInEmptyBlock:                  false
+SpaceInEmptyParentheses:            false
+SpacesInAngles:                     true
+SpacesInCStyleCastParentheses:      true
+SpacesInConditionalStatement:       true
+SpacesInContainerLiterals:          true
+SpacesInParentheses:                true
+SpacesInSquareBrackets:             true
+
+# ------------------------------------------------------------------------------
+# Include & Using
+# ------------------------------------------------------------------------------
+
+IncludeBlocks:          Regroup
+SortIncludes:           false
+SortUsingDeclarations:  true
+
+# ------------------------------------------------------------------------------
+# Empty Lines
+# ------------------------------------------------------------------------------
+
+KeepEmptyLinesAtTheStartOfBlocks:   false
+MaxEmptyLinesToKeep:                1
+
+# ------------------------------------------------------------------------------
+# Bin Pack
+# ------------------------------------------------------------------------------
+
+BinPackArguments:   false
+BinPackParameters:  false
+
+# ------------------------------------------------------------------------------
+# C++
+# ------------------------------------------------------------------------------
+
+AccessModifierOffset:                           0
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth:              4
+CompactNamespaces:                              false
+Cpp11BracedListStyle:                           false
+FixNamespaceComments:                           false
+
+# ------------------------------------------------------------------------------
+# Objective-C
+# ------------------------------------------------------------------------------
+
+ObjCBinPackProtocolList:            Never
+ObjCBlockIndentWidth:               4
+ObjCBreakBeforeNestedBlockParam:    true
+ObjCSpaceAfterProperty:             false
+ObjCSpaceBeforeProtocolList:        false
+
+# ------------------------------------------------------------------------------
+# JavaScript
+# ------------------------------------------------------------------------------
+
+JavaScriptQuotes:       Leave
+JavaScriptWrapImports:  true
