@@ -188,9 +188,10 @@
 --nowrapoperators   
 --wrapternary       default
 
---disable             wrapArguments
+--rules             wrapArguments
+--wraparguments     before-first
 --wrapparameters    before-first
---wrapcollections   before-first"
+--wrapcollections   before-first
 --closingparen      balanced
 
 --rules             wrapAttributes
