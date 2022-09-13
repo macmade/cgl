@@ -32,10 +32,7 @@ swiftformat: _CONFIG_ = $($(patsubst %,CONFIG_%,$@))
 swiftformat: _FILES_  = SWIFT_RESPONSE_FILE_PATH_${CURRENT_VARIANT}_${ARCHS}
 swiftformat: update_swiftformat build_swiftformat
 	
-	@echo "Swift format executable:    $(_EXEC_)"
-	@echo "Swift format configuration: $(_CONFIG_)"
-	@echo "Swift format file list:     $(_FILES_) - ${$(_FILES_)}"
-	@$(_EXEC_) --config "$(_CONFIG_)" --filelist "${$(_FILES_)}"
+	@if [ -f $(_EXEC_) ]; then $(_EXEC_) --config "$(_CONFIG_)" --filelist "${$(_FILES_)}"; fi
 	
 .SECONDEXPANSION:
 
@@ -45,14 +42,16 @@ build_%: _DIR_TMP_      = $(patsubst build_%,$(DIR_TMP)%,$@)
 build_%: _DIR_BUILD_    = $(patsubst build_%,$(DIR_BUILD)%,$@)
 build_%:
 	
-	xcodebuild -project "$(_DIR_TMP_)/$(_XCODE_PROJ_)" -scheme $(_XCODE_SCHEME_) -derivedDataPath $(_DIR_BUILD_) -configuration Release build DEVELOPMENT_TEAM=J5PR93692Y ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO
+	@if [ -d $(_DIR_TMP_) ]; then xcodebuild -project "$(_DIR_TMP_)/$(_XCODE_PROJ_)" -scheme $(_XCODE_SCHEME_) -derivedDataPath $(_DIR_BUILD_) -configuration Release build DEVELOPMENT_TEAM=J5PR93692Y ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO; fi
 
 update_%: $$(DIR_TMP)$$*
 	
-	@cd $(DIR_TMP)$* && git pull
-	@cd $(DIR_TMP)$* && git submodule update --init --recursive
+	@if nc -zw1 github.com 443; then                                \
+		cd $(DIR_TMP)$* && git pull;                                \
+		cd $(DIR_TMP)$* && git submodule update --init --recursive; \
+	fi
 
 $(DIR_TMP)%: _GIT_ = $($(patsubst $(DIR_TMP)%,GIT_%,$@))
 $(DIR_TMP)%:
 	
-	git clone --recursive $(_GIT_) $(@)
+	@if nc -zw1 github.com 443; then git clone --recursive $(_GIT_) $(@); fi
