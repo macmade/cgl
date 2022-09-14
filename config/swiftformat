@@ -146,7 +146,7 @@
 
 --rules             spaceAroundGenerics
 
---disable             spaceAroundOperators
+--rules             spaceAroundOperators
 --operatorfunc      spaced
 --nospaceoperators  
 --ranges            spaced
