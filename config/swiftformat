@@ -56,7 +56,7 @@
 --rules             hoistPatternLet
 --patternlet        inline
 
---disable             indent
+--rules             indent
 --indent            4
 --tabwidth          4
 --smarttabs         enabled
@@ -123,7 +123,7 @@
 
 --rules             redundantReturn
 
---disable             redundantSelf
+--rules             redundantSelf
 --self              insert
 
 --rules             redundantType
