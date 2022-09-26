@@ -19,18 +19,21 @@ GIT_swiftformat             := https://github.com/DigiDNA/SwiftFormat.git
 XCODE_PROJ_swiftformat      := SwiftFormat.xcodeproj
 XCODE_SCHEME_swiftformat    := "SwiftFormat (Command Line Tool)"
 EXEC_swiftformat            := $(DIR_BUILD)swiftformat/Build/Products/Release/swiftformat
-CONFIG_swiftformat          := $(DIR_CONFIG)swiftformat
+CONFIG_swiftformat_ddna     := $(DIR_CONFIG)swiftformat-ddna
+CONFIG_swiftformat_mit      := $(DIR_CONFIG)swiftformat-mit
 
-.PHONY: swiftformat
+all: swiftformat_ddna
+	
+	@:
 
-all: swiftformat
+mit: swiftformat_mit
 	
 	@:
 	
-swiftformat: _EXEC_   = $($(patsubst %,EXEC_%,$@))
-swiftformat: _CONFIG_ = $($(patsubst %,CONFIG_%,$@))
-swiftformat: _FILES_  = SWIFT_RESPONSE_FILE_PATH_${CURRENT_VARIANT}_${ARCHS}
-swiftformat: update_swiftformat build_swiftformat
+swiftformat_%: _EXEC_   = $($(patsubst %,EXEC_%,$(patsubst %_$*,%,$@)))
+swiftformat_%: _CONFIG_ = $($(patsubst %,CONFIG_%,$@))
+swiftformat_%: _FILES_  = SWIFT_RESPONSE_FILE_PATH_${CURRENT_VARIANT}_${ARCHS}
+swiftformat_%: update_swiftformat build_swiftformat
 	
 	@if [ -f $(_EXEC_) ]; then $(_EXEC_) --config "$(_CONFIG_)" --filelist "${$(_FILES_)}"; fi
 	
