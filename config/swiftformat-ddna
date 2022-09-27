@@ -127,7 +127,7 @@
 --self              insert
 
 --rules             redundantType
---redundanttype     inferred
+--redundanttype     infer-locals-only
 
 --rules             redundantVoidReturnType
 --closurevoid       remove
