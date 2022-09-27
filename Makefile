@@ -15,7 +15,7 @@ DIR_BIN    := $(DIR_MAKEFILE)bin/
 DIR_BUILD  := $(DIR_MAKEFILE)build/
 DIR_CONFIG := $(DIR_MAKEFILE)config/
 
-GIT_swiftformat             := https://github.com/DigiDNA/SwiftFormat.git
+GIT_swiftformat             := https://github.com/macmade/SwiftFormat.git
 XCODE_PROJ_swiftformat      := SwiftFormat.xcodeproj
 XCODE_SCHEME_swiftformat    := "SwiftFormat (Command Line Tool)"
 EXEC_swiftformat            := $(DIR_BUILD)swiftformat/Build/Products/Release/swiftformat
