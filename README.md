@@ -1,20 +1,19 @@
 cgl
 ===
 
-[![Issues](http://img.shields.io/github/issues/DigiDNA/cgl.svg?logo=github)](https://github.com/DigiDNA/cgl/issues)
+[![Issues](http://img.shields.io/github/issues/macmade/cgl.svg?logo=github)](https://github.com/macmade/cgl/issues)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg?logo=git)
-![License](https://img.shields.io/badge/license-proprietary-red.svg?logo=open-source-initiative)  
-[![Contact](https://img.shields.io/badge/follow-@digidna-blue.svg?logo=twitter&style=social)](https://twitter.com/digidna)
-
-### About
-
-...
+![License](https://img.shields.io/badge/license-none-brightgreen.svg?logo=open-source-initiative)  
+[![Contact](https://img.shields.io/badge/follow-@macmade-blue.svg?logo=twitter&style=social)](https://twitter.com/macmade)
+[![Sponsor](https://img.shields.io/badge/sponsor-macmade-pink.svg?logo=github-sponsors&style=social)](https://github.com/sponsors/macmade)
 
 Repository Infos
 ----------------
 
-    Owner:          DigiDNA SARL
-    Web:            www.imazing.com
-    Blog:           blog.imazing.com
-    Twitter:        @DigiDNA
-    GitHub:         github.com/DigiDNA
+    Owner:          Jean-David Gadina - XS-Labs
+    Web:            www.xs-labs.com
+    Blog:           www.noxeos.com
+    Twitter:        @macmade
+    GitHub:         github.com/macmade
+    LinkedIn:       ch.linkedin.com/in/macmade/
+    StackOverflow:  stackoverflow.com/users/182676/macmade
