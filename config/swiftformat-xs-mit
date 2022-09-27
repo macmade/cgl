@@ -1,0 +1,209 @@
+--swiftversion      5
+
+--disable           acronyms
+--disable           blockComments
+--disable           consecutiveSpaces
+--disable           enumNamespaces
+--disable           initCoderUnavailable
+--disable           isEmpty
+--disable           organizeDeclarations
+--disable           sortDeclarations
+--disable           sortedSwitchCases
+--disable           spaceInsideBrackets
+--disable           spaceInsideGenerics
+--disable           spaceInsideParens
+--disable           unusedArguments
+--disable           wrapConditionalBodies
+
+--rules             andOperator
+
+--rules             anyObjectProtocol
+
+--rules             assertionFailures
+
+--rules             blankLinesAroundMark
+--lineaftermarks    true
+
+--rules             blankLinesAtEndOfScope
+
+--rules             blankLinesAtStartOfScope
+--typeblanklines    remove
+
+--rules             blankLinesBetweenImports
+
+--rules             blankLinesBetweenScopes
+
+--rules             braces
+--allman            true
+
+--rules             consecutiveBlankLines
+
+--rules             duplicateImports
+
+--rules             elseOnSameLine
+--elseposition      next-line
+--guardelse         next-line
+
+--rules             emptyBraces
+--emptybraces       no-space
+
+--rules             extensionAccessControl
+--extensionacl      on-extension
+
+--rules             fileHeader
+--header            /*******************************************************************************\n* The MIT License (MIT)\n* \n* Copyright (c) 2022, Jean-David Gadina - www.xs-labs.com\n* \n* Permission is hereby granted, free of charge, to any person obtaining a copy\n* of this software and associated documentation files (the Software), to deal\n* in the Software without restriction, including without limitation the rights\n* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n* copies of the Software, and to permit persons to whom the Software is\n* furnished to do so, subject to the following conditions:\n* \n* The above copyright notice and this permission notice shall be included in\n* all copies or substantial portions of the Software.\n* \n* THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n* THE SOFTWARE.\n******************************************************************************/
+
+--rules             hoistPatternLet
+--patternlet        inline
+
+--rules             indent
+--indent            4
+--tabwidth          4
+--smarttabs         enabled
+--indentcase        true
+--ifdef             indent
+--xcodeindentation  disabled
+--indentstrings     true
+
+--rules             leadingDelimiters
+
+--rules             linebreakAtEndOfFile
+
+--rules             linebreaks
+--linebreaks        lf
+
+--rules             markTypes
+--marktypes         never
+--markextensions    never
+
+--rules             modifierOrder
+--modifierorder     fileprivate,public,private,required,convenience,final,open,override,class,static,lazy,weak
+
+--rules             numberFormatting
+--decimalgrouping   ignore
+--binarygrouping    ignore
+--octalgrouping     ignore
+--hexgrouping       ignore
+--fractiongrouping  disabled
+--exponentgrouping  disabled
+--hexliteralcase    uppercase
+--exponentcase      lowercase
+
+--rules             preferDouble
+
+--rules             preferKeyPath
+
+--rules             redundantBackticks
+
+--rules             redundantBreak
+
+--rules             redundantClosure
+
+--rules             redundantExtensionACL
+
+--rules             redundantFileprivate
+
+--rules             redundantGet
+
+--rules             redundantInit
+
+--rules             redundantLet
+
+--rules             redundantLetError
+
+--rules             redundantNilInit
+
+--rules             redundantObjc
+
+--rules             redundantParens
+
+--rules             redundantPattern
+
+--rules             redundantRawValues
+
+--rules             redundantReturn
+
+--rules             redundantSelf
+--self              insert
+
+--rules             redundantType
+--redundanttype     infer-locals-only
+
+--rules             redundantVoidReturnType
+--closurevoid       remove
+
+--rules             semicolons
+--semicolons        never
+
+--rules             sortedImports
+--importgrouping    alpha
+
+--rules             spaceAroundBraces
+
+--rules             spaceAroundBrackets
+
+--rules             spaceAroundComments
+
+--rules             spaceAroundGenerics
+
+--rules             spaceAroundOperators
+--operatorfunc      spaced
+--nospaceoperators  
+--ranges            spaced
+
+--rules             spaceAroundParens
+
+--rules             spaceInsideBraces
+
+--rules             x_addSpaceInsideBrackets
+
+--rules             spaceInsideComments
+
+--rules             x_addSpaceInsideGenerics
+
+--rules             x_addSpaceInsideParens
+
+--rules             strongOutlets
+
+--rules             strongifiedSelf
+
+--rules             todos
+
+--rules             trailingClosures
+
+--rules             trailingCommas
+--commas            always
+
+--rules             trailingSpace
+--trimwhitespace    always
+
+--rules             typeSugar
+--shortoptionals    always
+
+--rules             void
+--voidtype          void
+
+--rules             wrap
+--maxwidth          none
+--nowrapoperators   
+--wrapternary       default
+
+--rules             wrapArguments
+--wraparguments     before-first
+--wrapparameters    before-first
+--wrapcollections   before-first
+--closingparen      balanced
+
+--rules             wrapAttributes
+--funcattributes    prev-line
+--typeattributes    prev-line
+--varattributes     same-line
+
+--rules             wrapEnumCases
+
+--rules             wrapMultilineStatementBraces
+
+--rules             wrapSwitchCases
+
+--rules             yodaConditions
+--yodaswap          always

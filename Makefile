@@ -19,14 +19,28 @@ GIT_swiftformat             := https://github.com/DigiDNA/SwiftFormat.git
 XCODE_PROJ_swiftformat      := SwiftFormat.xcodeproj
 XCODE_SCHEME_swiftformat    := "SwiftFormat (Command Line Tool)"
 EXEC_swiftformat            := $(DIR_BUILD)swiftformat/Build/Products/Release/swiftformat
+CONFIG_swiftformat_xs       := $(DIR_CONFIG)swiftformat-xs
+CONFIG_swiftformat_xs-mit   := $(DIR_CONFIG)swiftformat-xs-mit
 CONFIG_swiftformat_ddna     := $(DIR_CONFIG)swiftformat-ddna
-CONFIG_swiftformat_mit      := $(DIR_CONFIG)swiftformat-mit
+CONFIG_swiftformat_ddna-mit := $(DIR_CONFIG)swiftformat-ddna-mit
 
-all: swiftformat_ddna
+all: xs
 	
 	@:
 
-mit: swiftformat_mit
+xs: swiftformat_xs
+	
+	@:
+
+xs-mit: swiftformat_xs-mit
+	
+	@:
+
+ddna: swiftformat_ddna
+	
+	@:
+
+ddna-mit: swiftformat_ddna-mit
 	
 	@:
 	
