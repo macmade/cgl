@@ -1,6 +1,7 @@
 --swiftversion      5
 
 --disable           acronyms
+--disable           andOperator
 --disable           blockComments
 --disable           consecutiveSpaces
 --disable           enumNamespaces
@@ -14,8 +15,6 @@
 --disable           spaceInsideParens
 --disable           unusedArguments
 --disable           wrapConditionalBodies
-
---rules             andOperator
 
 --rules             anyObjectProtocol
 
