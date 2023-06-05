@@ -8,6 +8,7 @@
 --disable           initCoderUnavailable
 --disable           isEmpty
 --disable           organizeDeclarations
+--disable           redundantParens
 --disable           sortDeclarations
 --disable           sortedSwitchCases
 --disable           spaceInsideBrackets
@@ -113,8 +114,6 @@
 --rules             redundantNilInit
 
 --rules             redundantObjc
-
---rules             redundantParens
 
 --rules             redundantPattern
 
