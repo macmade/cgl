@@ -51,7 +51,7 @@
 --extensionacl      on-extension
 
 --rules             fileHeader
---header            /*******************************************************************************\n * Copyright (c) 2025, Jean-David Gadina - www.xs-labs.com\n * All rights reserved\n * \n * Unauthorised copying of this copyrighted work, via any medium is strictly\n * prohibited.\n * Proprietary and confidential.\n ******************************************************************************/
+--header            /*******************************************************************************\n * Copyright (c) 2026, Jean-David Gadina - www.xs-labs.com\n * All rights reserved\n * \n * Unauthorised copying of this copyrighted work, via any medium is strictly\n * prohibited.\n * Proprietary and confidential.\n ******************************************************************************/
 
 --rules             hoistPatternLet
 --patternlet        inline
